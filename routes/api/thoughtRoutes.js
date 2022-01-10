@@ -9,9 +9,9 @@ router.route('/').get(thoughtController.getThoughts).post(thoughtController.upda
 router.route("/:thoughtId").get(thoughtController.getThoughts).put(thoughtController.updateThought).delete(thoughtController.deleteThought)
 
 // api/thoughts/:thoughtId/reactions
-router.route('/:thoughtId/reactions').post(addReaction)
+router.route('/:thoughtId/reactions').post(thoughtController.addReaction)
 
 // api/thoughts/:thoughtId/reactions
-router.route('/:thoughtId/reactions/:reactionsId').delete(deleteThought)
+router.route('/:thoughtId/reactions/:reactionsId').delete(thoughtController.deleteThought)
 
 module.exports = router;

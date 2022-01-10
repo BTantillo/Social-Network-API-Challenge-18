@@ -134,4 +134,4 @@ const thoughtController = {
 }
 
 
- module.export = thoughtController
+ module.exports = thoughtController
