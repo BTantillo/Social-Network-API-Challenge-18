@@ -7,10 +7,11 @@
 ## Built With
 
 *Javascript
-*HTML
-*Inquirer Package
-*CSS
-*Jest
+*Express
+*Mongoose
+*Node.js
+*NPM
+*MONGODB
 
 
 
@@ -18,10 +19,11 @@
 
 *This link will bring you to the walkthrough video
 
-https://watch.screencastify.com/v/IArUp39qGLVFUj9fEp4i 
+
 
 
 ## Contributions
 
 *Made by Ben Tantillo
+<a href="mailto:bentantillo@gmail.com>Ben Tantillo />"
 
