@@ -2,7 +2,7 @@
 
 ## Purpose
 
-*To create a program that builds an HTML page through answering questions through the command line to create a profile containing all Team Members in a group
+*To create 
 
 ## Built With
 
