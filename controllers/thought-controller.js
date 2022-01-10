@@ -67,10 +67,71 @@ const thoughtController = {
                 console.log(err);
                 res.status(500).json(err);
               });
+    },
+
+    // delete a thought
+    deleteThought(req, res) {
+        Thought.findByIdAndRemove({ _Id: req.params.thoughtId })
+        .then((dbThoughtData) => {
+            if (!dbThoughtData) {
+                return res.status(404).json({ message: " No thought associated with this id!"})
+            }
+            return User.findOneAndUpdate(
+                {thoughts: req.params.thopughtId },
+                {$pull: {thoughts: req.params.thoughtId }},
+                { new: true }
+                )
+        })
+        .then((dbUserData) => {
+            if (!dbUserData) {
+                return res.status(404).json({message: "Created a thought but with no user to this id"})
+            }
+            res.sjson({ message: 'Thought was deleted!'})
+        })
+        .catch((err) => {
+            console.log(err);
+            res.status(500).json(err);
+          });
+    },
+
+    //reaction added to a thought
+    addReaction(req, res) {
+        Thought.findByIdAndUpdate(
+            { _id: req.params.thoughtId },
+            { $addToSet: { reactions: req.body }},
+            { runValidators: true, new: true }
+        )
+        .then((dbThoughtData) => {
+            if (!dbThoughtData) {
+                return res.status(404).json({ message: 'No thought associated with this Id!'})
+            }
+            res.json(dbThoughtData)
+        })
+        .catch((err) => {
+            console.log(err);
+            res.status(500).json(err);
+          });
+    },
+
+    //remove the reaction from the thought
+    removeReaction(req,res ) {
+        Thought.findOneAndUpdate(
+            { _id: rew.params.thoghtId},
+            { $pull: { reactions: { reactionId: req.params.reactionId}}},
+            { runValidators: true, new: true }
+        )
+        .then((dbThoughtData) => {
+            if (!dbThoughtData) {
+                return res.status(404).json({ message: 'No thought associated with this Id!'})
+            }
+            res.json(dbThoughtData)
+        })
+        .catch((err) => {
+            console.log(err);
+            res.status(500).json(err);
+          });
     }
-
-
-
-
 }
 
+
+ module.export = thoughtController
