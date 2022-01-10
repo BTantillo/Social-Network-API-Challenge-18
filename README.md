@@ -25,5 +25,5 @@
 ## Contributions
 
 *Made by Ben Tantillo
-"bentantillo@gmail.com"
+bentantillo@gmail.com
 
