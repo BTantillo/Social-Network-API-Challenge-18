@@ -5,6 +5,6 @@ router.route('/').get(userController.getAllUsers).post(userController.postNewUse
 
 router.route("/:id").get(userController.getUserId).put(userController.updateUser).delete(userController.deleteUser)
 
-router.route(":id/thoughtId/:friendId").post(userController.addFriend).delete(userController.deleteFriend)
+router.route("/:id/friends/:friendId").post(userController.addFriend).delete(userController.deleteFriend)
 
 module.exports = router;
