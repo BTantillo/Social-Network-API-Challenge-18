@@ -20,9 +20,11 @@
 *This link will bring you to the walkthrough video
 <p>Video ran slightly longer than 5 minutes so it is split into two separate videos</p>
 
+<p>Part 1</p>
+https://watch.screencastify.com/v/JpFIS2FQrITijffLyPJa
 
-
-
+<p>Part 2</p>
+https://watch.screencastify.com/v/kznh4gMW7uQ7r17feSbr
 
 
 ## Contributions
