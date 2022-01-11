@@ -2,7 +2,7 @@
 
 ## Purpose
 
-*To create 
+* The goal was to create API for a potiential social media focused website using NoSQL and MongoDB to manage large amounts of data
 
 ## Built With
 
@@ -11,7 +11,7 @@
 *Mongoose
 *Node.js
 *NPM
-*MONGODB
+*MongoDB
 
 
 
@@ -25,5 +25,7 @@
 ## Contributions
 
 *Made by Ben Tantillo
-bentantillo@gmail.com
+<p>
+<a href="mailto:bentantillo@gmail.com">Ben Tantillo </a>
+</p>
 
