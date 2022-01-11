@@ -18,7 +18,8 @@
 ## Walkthrough Video
 
 *This link will bring you to the walkthrough video
-*Video ran slightly longer than 5 minutes so it is split into two separate videos
+<p>Video ran slightly longer than 5 minutes so it is split into two separate videos</p>
+
 
 
 
